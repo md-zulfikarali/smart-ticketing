@@ -23,3 +23,25 @@ const showHomeScreen = document.getElementById('home-screen');
 showHomeScreen.classList.remove('hidden');
 
 }
+
+
+// count seats
+
+const allBtn = document.getElementsByClassName('btn');
+let count = 0;
+let minusSeat = 40;
+let totalCost = 0;
+
+for (const btn of allBtn){
+    btn.addEventListener('click', function(event){
+        count = count + 1;
+      document.getElementById('seat-count').innerText = count;
+      minusSeat = minusSeat - 1;
+      document.getElementById('seat-left').innerText = minusSeat;
+    //   total cost----
+    totalCost = totalCost + 550;
+    document.getElementById('total-cost').innerText = totalCost;
+    // grand total cost -----
+    
+    })
+}
