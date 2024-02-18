@@ -38,10 +38,10 @@ for (const btn of allBtn){
       document.getElementById('seat-count').innerText = count;
       minusSeat = minusSeat - 1;
       document.getElementById('seat-left').innerText = minusSeat;
-    //   total cost----
+    //   total cost
     totalCost = totalCost + 550;
     document.getElementById('total-cost').innerText = totalCost;
-    // grand total cost -----
+   
     
     })
 }
