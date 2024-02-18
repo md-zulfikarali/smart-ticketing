@@ -94,7 +94,7 @@
         </section>
         <!-- p.h poribahan section -->
         <section class="bg-gray-100 rounded-3xl border-t-2 border-orange-400 mt-10">
-            <div class="mt-10 pt-10">
+            <div class="pt-10">
                 <h2 class="text-3xl font-bold text-center">P.H Paribahan</h2>
                 <p class="text-center">
                     Enjoy your journey with p paribahan. You will have a wonderful traveling experiencing with us. <br>
@@ -168,18 +168,166 @@
                 </div>
             </div>
         </section>
-        <section class="flex justify-around">
+        <section class="flex flex-col lg:flex-row justify-center gap-20">
             <!-- select your seats -->
-            <div >
-                <h2 class="text-2xl">Select Your Seats</h2>
+            <div>
+                <h2 class="text-2xl mb-5">Select Your Seats</h2>
+                <hr style="border-top: 1px dashed;">
+                <div class="flex justify-between mb-2 mt-2">
+                    <div class="flex"><img src="images/seat-gray.png" alt="">
+                        <span>Available</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <img src="images/seat-green-filled.png" alt="">
+                        <span>Selected</span>
+                    </div>
+                </div>
+                <hr style="border-top: 1px dashed;">
+                <!-- seat section -->
+                <div class="flex gap-10 mb-5 mt-5">
+                    <p class="pt-3">A</p>
+                    <button class="btn">A1</button>
+                    <button class="btn">A2</button>
+                    <button class="btn">A3</button>
+                    <button class="btn">A4</button>
+                </div>
+                <div class="flex gap-10 mb-5">
+                    <p class="pt-3">B</p>
+                    <button class="btn">B1</button>
+                    <button class="btn">B2</button>
+                    <button class="btn">B3</button>
+                    <button class="btn">B4</button>
+                </div>
+                <div class="flex gap-10 mb-5">
+                    <p class="pt-3">C</p>
+                    <button class="btn">C1</button>
+                    <button class="btn">C2</button>
+                    <button class="btn">C3</button>
+                    <button class="btn">C4</button>
+                </div>
+                <div class="flex gap-10 mb-5">
+                    <p class="pt-3">D</p>
+                    <button class="btn">D1</button>
+                    <button class="btn">D2</button>
+                    <button class="btn">D3</button>
+                    <button class="btn">D4</button>
+                </div>
+                <div class="flex gap-10 mb-5 pt-2 pl-3">
+                    <p class="pt-3">E</p>
+                    <button class="btn">E1</button>
+                    <button class="btn">E2</button>
+                    <button class="btn">E3</button>
+                    <button class="btn">E4</button>
+                </div>
+                <div class="flex gap-10 mb-5 pt-2 pl-3">
+                    <p class="pt-3">F</p>
+                    <button class="btn">F1</button>
+                    <button class="btn">F2</button>
+                    <button class="btn">F3</button>
+                    <button class="btn">F4</button>
+                </div>
+                <div class="flex gap-10 mb-5">
+                    <p class="pt-3">G</p>
+                    <button class="btn">G1</button>
+                    <button class="btn">G2</button>
+                    <button class="btn">G3</button>
+                    <button class="btn">G4</button>
+                </div>
+                <div class="flex gap-10 mb-5">
+                    <p class="pt-3">H</p>
+                    <button class="btn">H1</button>
+                    <button class="btn">H2</button>
+                    <button class="btn">H3</button>
+                    <button class="btn">H4</button>
+                </div>
             </div>
+
             <!-- total amount to pay -->
             <div>
-                <h2 class="text-2xl">Amount You Pay</h2>
+                <h2 class="text-2xl mb-5">Amount You Pay</h2>
+                <hr style="border-top: 1px dashed;">
+                <div class="bg-gray-100 rounded-xl p-2 mt-2">
+                    <div class="flex justify-between mb-2 font-bold">
+                        <p>seat</p>
+                        <p>class</p>
+                        <p>Price</p>
 
+                    </div>
+                    <hr style="border-top: 1px dashed;">
+                    <!-- empty div for dynamic seats and prices -->
+                    <div class="mb-5"></div>
+                    <hr style="border-top: 1px solid">
+                    <!-- total price div -->
+                    <div class="flex justify-between mb-5 font-bold">
+                        <p>Total Price</p>
+                        <p>BDT 0</p>
+                    </div>
+                    <div class="flex justify-between mb-5 gap-10 bg-white rounded-md">
+                        <p>Have any coupon?</p>
+                        <button class="text-white bg-orange-600 rounded-md px-4 py-2">Apply</button>
+                    </div>
+                    <!-- grand total div -->
+                    <div class="flex justify-between mb-5 font-bold">
+                        <p>Grand Total</p>
+                        <p>BDT 0</p>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <!-- form section -->
+                    <label class="font-bold " for="passenger-name">Passenger Name *</label><br>
+                    <input class="border-2 rounded-md w-full pl-3" type="text" placeholder="Enter your name">
+                </div>
+                <div class="mt-5">
+                   
+                    <label class="font-bold " for="passenger-name">Phone Number *</label><br>
+                    <input class="border-2 rounded-md w-full pl-3" type="text" placeholder="Enter your phone number">
+                </div>
+                <div class="mt-2 mb-5">
+                   
+                    <label class="font-bold" for="passenger-name">Email ID</label><br>
+                    <input class="border-2 rounded-md w-full pl-3" type="text" placeholder="Enter your email id">
+                </div>
+                <button class="w-full text-white bg-orange-600 rounded-md p-2">Next</button>
+                <div class="flex gap-2 mt-5 ">
+                    <a class="border-b-2" href="">Terms and Condition</a><a class="border-b-2">Cancellation Policy</a>
+                </div>
             </div>
+           
         </section>
     </main>
+    <footer>
+       <div class="bg-black pt-10">
+        <div class="flex justify-between px-20">
+            <div>
+                <h3 class="text-2xl text-white">P-Ticket</h3>
+                <p class="text-white">P-Ticket is a digital platform to make your <br>
+                     digital commuting better.</p>
+            </div>
+            <div class="mb-5">
+                <p class="text-white font-semibold">Download our app</p>
+                <div class="border-2">
+               <div class="flex gap-2">
+                <img src="images/playstore.png" alt=""><span class="text-white">Get it on <br>Google Play</span>
+               </div>                    
+                </div>
+            </div>
+         
+          
+        </div>
+        <hr style="border-top: 1px dashed">
+        <div class="flex justify-around py-10">
+            <div class="text-white">
+                <p class="text-white">@all right reserved, P-Ticket services limited,2024.</p>
+            </div>
+            <div class="flex justify-around text-white gap-5">
+                <p><a href="">Terms & Condition</a></p>
+                <p><a href="">Return & refund policy</a></p>
+                <p><a href="">Privacy policy</a></p>
+            </div>
+        </div>
+       </div>
+       
+    </footer>
 </body>
 
 </html>
