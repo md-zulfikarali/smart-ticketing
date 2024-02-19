@@ -54,22 +54,21 @@ for (const btn of allBtn){
     //   total cost
     totalCost = totalCost + 550;
     document.getElementById('total-cost').innerText = totalCost;
-   
+ 
     
     })
 }
 
 function applyButton(){
-    const userInputCoupon =document.getElementById('coupon-field').value;
-    if (userInputCoupon.toLowerCase() == "new 15"){
+    const userInputCoupon = document.getElementById('coupon-field').value;
+    if (userInputCoupon.toLowerCase() == "new15"){
         if (totalCost > 0){
-            let discountPrice =totalCost*0.15
+            let discountPrice = totalCost*0.15
             let granTotal = totalCost - discountPrice;
             document.getElementById('grand-total-cost').innerText = granTotal;
         }else{
             alert ('Please select at least one seat. ')
         }
-        userInputCoupon.value ="i love you "
     }
 
     if (userInputCoupon.toLowerCase() == "couple 20"){
