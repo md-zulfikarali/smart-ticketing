@@ -34,6 +34,19 @@ let totalCost = 0;
 
 for (const btn of allBtn){
     btn.addEventListener('click', function(event){
+        let btnId = document.getElementById(event.target.id)
+       
+        btnId.disabled =true;
+        
+        document.getElementById('dynamic-seat-price').innerHTML +=`
+                                                                        <p class="flex justify-between"> 
+                                                                        <span>${event.target.id} </span>
+                                                                        <span>Economy</span>  
+                                                                        <span> 550</span> 
+                                                                        </p> 
+                                                                    `;
+
+
         count = count + 1;
       document.getElementById('seat-count').innerText = count;
       minusSeat = minusSeat - 1;
@@ -44,6 +57,31 @@ for (const btn of allBtn){
    
     
     })
+}
+
+function applyButton(){
+    const userInputCoupon =document.getElementById('coupon-field').value;
+    if (userInputCoupon.toLowerCase() == "new 15"){
+        if (totalCost > 0){
+            let discountPrice =totalCost*0.15
+            let granTotal = totalCost - discountPrice;
+            document.getElementById('grand-total-cost').innerText = granTotal;
+        }else{
+            alert ('Please select at least one seat. ')
+        }
+        userInputCoupon.value ="i love you "
+    }
+
+    if (userInputCoupon.toLowerCase() == "couple 20"){
+        if (totalCost > 0){
+            let discountPrice =totalCost*0.20
+            let granTotal = totalCost - discountPrice;
+            document.getElementById('grand-total-cost').innerText = granTotal;
+        }else{
+            alert ('Please select at least one seat. ')
+        }
+       
+    }
 }
 
 
